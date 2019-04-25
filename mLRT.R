@@ -39,7 +39,7 @@ mLRT = function(dat) {
     L1B[j]=L1B[j]*p1B_H1^NC_tab_B[j]*(1-p1B_H1)^(N_tab_B[j]-NC_tab_B[j])
   }
   
-  L0=c(L0A,L0B); L1=c(L1A,L1B)
+  L0=c(L0A,L0B); L1=c(L1A,L1B) #likelihood function
   
   # test statistic
   M=2*sum(log(L1))-2*sum(log(L0))
